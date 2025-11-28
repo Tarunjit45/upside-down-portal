@@ -1,0 +1,8 @@
+{
+  "name": "The Upside Down Portal",
+  "description": "Transform your selfies into cinematic Stranger Things Season 5 posters using Gemini 3 Pro Image Preview. Features image generation, editing, and analysis.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
