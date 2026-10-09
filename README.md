@@ -1,72 +1,75 @@
-# 🚀 upside-down-portal
+# 🌌 The Upside Down Portal — Stranger Things AI Poster Generator
 
-![Language](https://img.shields.io/badge/Language-TypeScript-blue?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Production-Active-success?style=for-the-badge)
+[![React](https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org/)
+[![Google Gemini](https://img.shields.io/badge/Vision-Gemini%203%20Pro-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4+-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-## 📌 Overview
+**The Upside Down Portal** is an immersive *Stranger Things Season 5* poster generator powered by Google's **Gemini Multimodal Vision API**. Step into Hawkins, Indiana circa 1985: take a selfie or upload a photo, and watch the AI transform your portrait into a cinematic, retro-synthwave movie poster from the Upside Down.
 
-🌌 An immersive Stranger Things Season 5 poster generator powered by Google Gemini. Transform selfies into cinematic "Upside Down" art, edit reality with AI, and analyze images in a retro 1985 Netflix-style interface. Built with React, Tailwind CSS, and the Gemini API.
+---
 
-## ✨ Key Features & Architecture
+## ✨ Features
 
-- **High-Performance Codebase:** Built using `TypeScript` and modern engineering principles.
-- **Modular & Scalable Design:** Structured directory tree for seamless development and deployment.
-- **Modern Responsive Styling:** Custom UI design system engineered for mobile & desktop clarity.
+* 📸 **Retro 1985 Hawkins CRT Interface:** Immersive retro aesthetic with VHS scanlines, vintage synthwave color palettes, and arcade typography.
+* 🐙 **Upside Down Transformation:** Gemini Multimodal Vision infuses red lightning, creeping Mind Flayer vines, spore particles, and vintage grain into your photos.
+* 🎞️ **Custom Poster Typography:** Generate official Netflix-style promotional posters complete with title logos, tagline generators, and credits billing blocks.
+* 📷 **Webcam Ingestion:** Snap photos directly from your browser with integrated camera support.
 
-## 🛠️ Tech Stack & Dependencies
+---
 
-- **Core Language:** `TypeScript`
-- **Libraries & Tools:** React 18, Vite, Tailwind CSS, TypeScript
-- **Deployment Infrastructure:** Vercel Edge / Cloud Services
+## 🛠️ Tech Stack & Architecture
 
-## 📁 Architecture & File Layout
+* **Frontend:** React 18, TypeScript, Tailwind CSS, Lucide React.
+* **AI Engine:** Google Gemini API (`@google/genai`).
+* **Tooling:** Vite, PostCSS.
+
+---
+
+## 📁 Repository Structure
 
 ```text
 upside-down-portal/
-├── .github
-├── .github/ISSUE_TEMPLATE
-├── .github/ISSUE_TEMPLATE/bug_report.md
-├── .github/ISSUE_TEMPLATE/feature_request.md
-├── .github/PULL_REQUEST_TEMPLATE.md
-├── .github/workflows
-├── .github/workflows/ci.yml
-├── .gitignore
-├── App.tsx
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── README.md
-├── components
-├── components/ChristmasLights.tsx
-└── ... [additional codebase files]
+├── App.tsx             # Main portal interface, CRT frame & poster studio
+├── index.tsx           # React bootstrap entry
+├── index.html          # HTML shell with vintage typography imports
+├── components/         # Camera capture, poster canvas, retro filter sliders
+├── constants.ts        # Retro sound effects, Hawkins lore tags, theme palettes
+├── services/           # Gemini API client & multimodal image prompts
+├── metadata.json       # App manifest & permissions
+├── package.json        # Dependencies & scripts
+├── LICENSE             # MIT License
+└── README.md
 ```
 
-## 🚀 Quickstart & Installation
+---
 
-### Prerequisites
-- Node.js (v18.0.0 or higher)
-- npm or yarn package manager
+## 🚀 Quick Start
 
-### Setup Instructions
+### 1. Installation
+```bash
+git clone https://github.com/Tarunjit45/upside-down-portal.git
+cd upside-down-portal
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Tarunjit45/upside-down-portal.git
-   cd upside-down-portal
-   ```
+npm install
+```
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+### 2. Configure Environment
+Create a `.env` file:
 
-3. **Launch development server:**
-   ```bash
-   npm run dev
-   ```
+```env
+VITE_GEMINI_API_KEY=your_gemini_api_key_here
+```
 
-## 📜 Author & License
+### 3. Run Development Server
+```bash
+npm run dev
+```
 
-Architected & Developed by **[Tarunjit Biswas](https://github.com/Tarunjit45)**.  
-Distributed under the **MIT License**.
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
